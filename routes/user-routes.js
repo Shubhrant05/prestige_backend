@@ -1,6 +1,6 @@
 import express from 'express'
 import {signupController, signinController, googleController, updateUserController, deleteUserController, signOutController, getListingsController, getUser} from '../controllers/user-controllers.js'
-import {verifyUser} from '../../verifyUser.js'
+import {verifyUser} from '../verifyUser.js'
 const router = express.Router()
 
 router.post('/signup', signupController)

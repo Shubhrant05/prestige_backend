@@ -1,6 +1,6 @@
 import express from 'express'
 import { createListing, deleteListing, updateListing, getListing, getListings} from '../controllers/listing-controller.js';
-import { verifyUser } from '../../verifyUser.js';
+import { verifyUser } from '../verifyUser.js';
 const router = express.Router()
 
 router.post('/create', verifyUser, createListing)
